@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated framework_campeonato -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="framework_campeonato.presentation.Framework_campeonatoModelWizardID"
+            name="%_UI_Framework_campeonatoModelWizard_label"
+            class="framework_campeonato.presentation.Framework_campeonatoModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Framework_campeonatoModelFile.gif">
+         <description>%_UI_Framework_campeonatoModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated framework_campeonato -->
+      <editor
+            id="framework_campeonato.presentation.Framework_campeonatoEditorID"
+            name="%_UI_Framework_campeonatoEditor_label"
+            icon="icons/full/obj16/Framework_campeonatoModelFile.gif"
+            extensions="framework_campeonato"
+            class="framework_campeonato.presentation.Framework_campeonatoEditor"
+            contributorClass="framework_campeonato.presentation.Framework_campeonatoActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

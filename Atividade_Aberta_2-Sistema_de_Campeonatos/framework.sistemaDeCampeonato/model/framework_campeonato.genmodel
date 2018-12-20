@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/framework.sistemaDeCampeonato/src" modelPluginID="framework.sistemaDeCampeonato"
+    modelName="Framework_campeonato" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.rose" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>C:\Users\Gemah\Documents\GitHub\irsFrameworksEReutilizacaoDeSoftware\Atividade_Aberta_2-Sistema_de_Campeonatos\resources\framework_campeonato.mdl</foreignModel>
+  <genPackages prefix="Framework_campeonato" disposableProviderFactory="true" ecorePackage="framework_campeonato.ecore#/">
+    <genClasses ecoreClass="framework_campeonato.ecore#//Campeonato">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Campeonato/nome"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Campeonato/dataInicial"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Campeonato/dataFinal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference framework_campeonato.ecore#//Campeonato/tipoCampeonato"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference framework_campeonato.ecore#//Campeonato/Grupo"/>
+      <genOperations ecoreOperation="framework_campeonato.ecore#//Campeonato/decidirFinalistas"/>
+      <genOperations ecoreOperation="framework_campeonato.ecore#//Campeonato/decidirMVP"/>
+    </genClasses>
+    <genClasses ecoreClass="framework_campeonato.ecore#//Grupo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Grupo/nome"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Grupo/codigo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference framework_campeonato.ecore#//Grupo/Time"/>
+      <genOperations ecoreOperation="framework_campeonato.ecore#//Grupo/partida"/>
+    </genClasses>
+    <genClasses ecoreClass="framework_campeonato.ecore#//Time">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Time/nome"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Time/codigo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference framework_campeonato.ecore#//Time/Jogador"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="framework_campeonato.ecore#//Jogador">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Jogador/nome"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//Jogador/codigo"/>
+    </genClasses>
+    <genClasses ecoreClass="framework_campeonato.ecore#//TipoCampeonato">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//TipoCampeonato/PONTOS_CORRIDOS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//TipoCampeonato/MATA_MATA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//TipoCampeonato/HIBRIDO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute framework_campeonato.ecore#//TipoCampeonato/value"/>
+    </genClasses>
+    <genClasses ecoreClass="framework_campeonato.ecore#//Goleiro"/>
+    <genClasses ecoreClass="framework_campeonato.ecore#//Zagueiro"/>
+    <genClasses ecoreClass="framework_campeonato.ecore#//Atacante"/>
+    <genClasses ecoreClass="framework_campeonato.ecore#//Lateral"/>
+  </genPackages>
+</genmodel:GenModel>
