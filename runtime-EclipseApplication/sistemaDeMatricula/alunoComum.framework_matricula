@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework_matricula:AlunoComum xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:framework_matricula="http:///framework_matricula.ecore" nome="Daniela Alves" numeroMatricula="32556" dataNascimento="21/03/1997">
+  <Matricula codigo="554230">
+    <disciplina nome="Anatomia Básica" codigo="45" areaConhecimento="Biológicas"/>
+    <tipoMatricula value="Virtual"/>
+  </Matricula>
+</framework_matricula:AlunoComum>

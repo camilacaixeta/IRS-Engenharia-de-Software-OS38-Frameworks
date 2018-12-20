@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework_matricula:AlunoBolsista xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:framework_matricula="http:///framework_matricula.ecore" nome="João da Silva" numeroMatricula="125330" dataNascimento="01/04/1990">
+  <Matricula codigo="776589">
+    <disciplina nome="Cálculo I" codigo="12" areaConhecimento="Exatas"/>
+    <tipoMatricula value="Presencial"/>
+  </Matricula>
+  <Matricula codigo="850021">
+    <disciplina nome="Introdução à Psicologia" codigo="65" areaConhecimento="Humanidades"/>
+    <tipoMatricula value="Presencial"/>
+  </Matricula>
+</framework_matricula:AlunoBolsista>

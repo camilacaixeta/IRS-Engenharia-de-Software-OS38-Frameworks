@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated framework_matricula -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="framework_matricula.presentation.Framework_matriculaModelWizardID"
+            name="%_UI_Framework_matriculaModelWizard_label"
+            class="framework_matricula.presentation.Framework_matriculaModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Framework_matriculaModelFile.gif">
+         <description>%_UI_Framework_matriculaModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated framework_matricula -->
+      <editor
+            id="framework_matricula.presentation.Framework_matriculaEditorID"
+            name="%_UI_Framework_matriculaEditor_label"
+            icon="icons/full/obj16/Framework_matriculaModelFile.gif"
+            extensions="framework_matricula"
+            class="framework_matricula.presentation.Framework_matriculaEditor"
+            contributorClass="framework_matricula.presentation.Framework_matriculaActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
