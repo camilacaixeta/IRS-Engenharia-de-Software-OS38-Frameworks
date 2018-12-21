@@ -2,7 +2,7 @@
  */
 package framework_campeonato;
 
-import org.eclipse.emf.common.util.EList;
+import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -91,6 +91,6 @@ public interface Time extends EObject {
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	EList<Jogador> getJogador();
-
+	List<Jogador> getJogador();
+	
 } // Time

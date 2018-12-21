@@ -7,8 +7,9 @@ import framework_campeonato.Grupo;
 import framework_campeonato.Time;
 
 import java.lang.reflect.InvocationTargetException;
-
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -88,7 +89,7 @@ public class GrupoImpl extends MinimalEObjectImpl.Container implements Grupo {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Time> time;
+	protected List<Time> time = new ArrayList<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,7 +157,7 @@ public class GrupoImpl extends MinimalEObjectImpl.Container implements Grupo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Time> getTime() {
+	public List<Time> getTime() {
 		if (time == null) {
 			time = new EObjectContainmentEList<Time>(Time.class, this, Framework_campeonatoPackage.GRUPO__TIME);
 		}

@@ -8,8 +8,9 @@ import framework_campeonato.Grupo;
 import framework_campeonato.TipoCampeonato;
 
 import java.lang.reflect.InvocationTargetException;
-
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -121,8 +122,8 @@ public class CampeonatoImpl extends MinimalEObjectImpl.Container implements Camp
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Grupo> grupo;
-
+	protected List<Grupo> grupo = new ArrayList<>();
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -253,7 +254,7 @@ public class CampeonatoImpl extends MinimalEObjectImpl.Container implements Camp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Grupo> getGrupo() {
+	public List<Grupo> getGrupo() {
 		if (grupo == null) {
 			grupo = new EObjectContainmentEList<Grupo>(Grupo.class, this, Framework_campeonatoPackage.CAMPEONATO__GRUPO);
 		}

@@ -2,7 +2,7 @@
  */
 package framework_campeonato;
 
-import org.eclipse.emf.common.util.EList;
+import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -145,7 +145,7 @@ public interface Campeonato extends EObject {
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	EList<Grupo> getGrupo();
+	List<Grupo> getGrupo();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -162,5 +162,5 @@ public interface Campeonato extends EObject {
 	 * @generated
 	 */
 	void decidirMVP();
-
+	
 } // Campeonato

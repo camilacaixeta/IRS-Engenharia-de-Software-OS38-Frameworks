@@ -6,7 +6,9 @@ import framework_campeonato.Framework_campeonatoPackage;
 import framework_campeonato.Jogador;
 import framework_campeonato.Time;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -86,7 +88,7 @@ public class TimeImpl extends MinimalEObjectImpl.Container implements Time {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Jogador> jogador;
+	protected List<Jogador> jogador = new ArrayList<>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,7 +156,7 @@ public class TimeImpl extends MinimalEObjectImpl.Container implements Time {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Jogador> getJogador() {
+	public List<Jogador> getJogador() {
 		if (jogador == null) {
 			jogador = new EObjectContainmentEList<Jogador>(Jogador.class, this, Framework_campeonatoPackage.TIME__JOGADOR);
 		}

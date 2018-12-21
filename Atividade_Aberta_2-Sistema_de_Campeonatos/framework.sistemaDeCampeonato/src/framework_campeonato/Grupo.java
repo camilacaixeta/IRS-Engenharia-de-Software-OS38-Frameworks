@@ -2,7 +2,7 @@
  */
 package framework_campeonato;
 
-import org.eclipse.emf.common.util.EList;
+import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -91,7 +91,7 @@ public interface Grupo extends EObject {
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	EList<Time> getTime();
+	List<Time> getTime();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -100,5 +100,5 @@ public interface Grupo extends EObject {
 	 * @generated
 	 */
 	void partida();
-
+	
 } // Grupo
