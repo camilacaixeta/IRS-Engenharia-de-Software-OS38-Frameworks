@@ -16,3 +16,5 @@
 * Criar uma instância do framework. Nessa instância, a classe jogador deve ser estendida pela adição de ao menos uma *app-class*. Crie ao menos um método adicional na classe Campeonato e crie ao menos uma variação para um dos métodos variáveis que foi criado no item anterior.
 * A partir do modelo (instância) gerado na letra b, gere as classes EMF (do Ecore e de Edição).
 * Crie um programa Java que permita incluir, excluir, alterar e cadastrar campeonatos e grupos utilizando-se de GUIs (Swing ou AWT) e que utilize as classes e estruturas geradas pelo EMF, principalmente para CRUD.
+
+  * O diagrama e arquivo de modelo do Rational Rose se encontram na pasta *resources*, O framework está modelado, e o seu código gerado se encontram dentro da pasta "Aividade_Aberta_2-SistemaDeCampeonato". Uma instância de teste foi criada conforme o tutorial fornecido na apostila, dentro da pasta "runtime-EclipseApplication". Dentro do projeto original, há uma implementação sob forma de interface gráfica, no pacote "gui".
